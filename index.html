@@ -43,13 +43,12 @@
                                 <i class="ti-menu navbar-user-icon-menu"></i>
                                 <i class="fas fa-user navbar-user-icon-user"></i>
                                 <div class="navbar-login-container">
-        
                                     <ul class="navbar-login">
                                         <li class="navbar-login__list">
-                                            <a href="#" class="navbar-login__link navbar-login__link--weight ">Đăng ký</a>
+                                            <span class="navbar-login__link navbar-login__link--weight js-login-modal">Đăng ký</span>
                                         </li>
                                         <li class="navbar-login__list">
-                                            <a href="#" class="navbar-login__link">Đăng nhập</a>
+                                            <span class="navbar-login__link js-login-modal ">Đăng nhập</span>
                                         </li>
                                         <span class="navbar-separete"></span>
                                         <li class="navbar-login__list">
@@ -94,10 +93,19 @@
                 <div class="grid__center">
 
                     <div class="address">
-                        <a href="#" class="address-list">
+                        <a href="#" class="address-list address-list-has-child">
+                            
                             <span class="address-list-top">Địa điểm</span>
                             <input  class="address-list-bottom address-list-bottom-input " type="text" placeholder="Bạn sắp đi đâu?">
-                            <!-- <input class="address-list-bottom">Bạn sắp đi đâu?</input> -->
+
+                            <div class="address-child">
+                                <p class="address-child-text">Mọi lúc, mọi nơi</p>
+                                
+                                <div class="address-child-link">
+                                    <span class="address-child-search">Tìm kiếm linh hoạt</span>
+                                    <i class="address-child-icon fas fa-chevron-right"></i>
+                                </div>
+                            </div>
                         </a>
                         <a href="#" class="address-list">
                             <span class="address-list-top">Nhận phòng</span>
@@ -107,7 +115,7 @@
                             <span class="address-list-top">Trả phòng</span>
                             <span class="address-list-bottom">Thêm ngày</span>
                         </a>
-                        <a href="#" class="address-list address-list-search">
+                        <a href="#" class="address-list address-list-search address-list-has-child">
                             <span class="address-list-item">
                                 <span class="address-list-top">Khách</span>
                                 <span class="address-list-bottom">Thêm khách</span>
@@ -115,6 +123,47 @@
                             <span class="address-list-search">
                                 <i class="address-list-icon fas fa-search"></i>
                             </span>
+                            <div class="address-child address-child-sub-search ">
+                                <div class="address-child-sub-search-quantity">
+                                    <div class="address-child-quantity-left">
+                                        <span class="address-child-quantity-left-top">Người lớn</span>
+                                        <span class="address-child-quantity-left-btm">Từ 13 tuổi trở lên </span>
+                                    </div>
+                                    <div class="address-child-quantity-right">
+                                        <button class="address-child-remove"><i class="address-child-sub-search-icon fas fa-minus"></i></button>
+                                        <span class="address-child-right-quantity">0</span>
+                                        <button class="address-child-add"><i class="address-child-sub-search-icon fas fa-plus"></i></button>
+
+                                    </div>
+                                </div>
+                                <span class="separete"></span>
+                                <div class="address-child-sub-search-quantity">
+                                    <div class="address-child-quantity-left">
+                                        <span class="address-child-quantity-left-top">Trẻ em</span>
+                                        <span class="address-child-quantity-left-btm">Độ tuổi 2-12 </span>
+                                    </div>
+                                    
+                                    <div class="address-child-quantity-right">
+                                        <button class="address-child-remove"><i class="address-child-sub-search-icon fas fa-minus"></i></button>
+                                        <span class="address-child-right-quantity">0</span>
+                                        <button class="address-child-add"><i class="address-child-sub-search-icon fas fa-plus"></i></button>
+
+                                    </div>
+                                </div>
+                                <span class="separete"></span>
+                                <div class="address-child-sub-search-quantity">
+                                    <div class="address-child-quantity-left">
+                                        <span class="address-child-quantity-left-top">Em bé</span>
+                                        <span class="address-child-quantity-left-btm">Dưới 2 </span>
+                                    </div>
+                                    <div class="address-child-quantity-right">
+                                        <button class="address-child-remove"><i class="address-child-sub-search-icon fas fa-minus"></i></button>
+                                        <span class="address-child-right-quantity">0</span>
+                                        <button class="address-child-add"><i class="address-child-sub-search-icon fas fa-plus"></i></button>
+
+                                    </div>
+                                </div>
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -135,77 +184,77 @@
                     <p class="container-heading">Khám phá những điểm đến gần đây</p>
                     <div class="grid__row">
                         <div class="grid__column-4">
-                            <div class="container-top-place">
+                            <a href="#" class="container-top-place">
                                 <img src="./assest/imgs/Hà nội.jpg" alt="" class="container-top-img">
                                 <div class="container-top__place-info">
                                     <span class="container-top__place-info-name">Hà Nội</span>
                                     <span class="container-top__place-info-time">15 phút lái xe</span>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="grid__column-4">
-                            <div class="container-top-place">
+                            <a href="#" class="container-top-place">
                                 <img src="./assest/imgs/7253e011-7c22-48fd-b75d-d0da35372397.png" alt="" class="container-top-img">
                                 <div class="container-top__place-info">
                                     <span class="container-top__place-info-name">Thành phố Ninh Bình</span>
                                     <span class="container-top__place-info-time">1,5 giờ lái xe</span>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="grid__column-4">
-                            <div class="container-top-place">
+                            <a href="#" class="container-top-place">
                                 <img src="./assest/imgs/52e8083e-2de2-446d-a860-534eab250541.png" alt="" class="container-top-img">
                                 <div class="container-top__place-info">
                                     <span class="container-top__place-info-name">Hải Phòng</span>
                                     <span class="container-top__place-info-time">1,5 giờ lái xe</span>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="grid__column-4">
-                            <div class="container-top-place">
+                            <a href="#" class="container-top-place">
                                 <img src="./assest/imgs/585d1e53-e2e1-4baf-a34e-36301dd1e2da.webp" alt="" class="container-top-img">
                                 <div class="container-top__place-info">
                                     <span class="container-top__place-info-name">Thành phố Đồng Hới</span>
                                     <span class="container-top__place-info-time">6,5 giờ lái xe</span>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="grid__column-4">
-                            <div class="container-top-place">
+                            <a href="#" class="container-top-place">
                                 <img src="./assest/imgs/e639b7ab-aee3-48ee-9743-216684a51319.webp" alt="" class="container-top-img">
                                 <div class="container-top__place-info">
                                     <span class="container-top__place-info-name">Thị xã Sơn Tây</span>
                                     <span class="container-top__place-info-time">45 phút lái xe</span>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="grid__column-4">
-                            <div class="container-top-place">
+                            <a href="#" class="container-top-place">
                                 <img src="./assest/imgs/ca3737ef-0faf-46ba-b055-b4a2d99e2cea.webp" alt="" class="container-top-img">
                                 <div class="container-top__place-info">
                                     <span class="container-top__place-info-name">Thị xã Sầm Sơn</span>
                                     <span class="container-top__place-info-time">2,5 giờ lái xe</span>
                                 </div>
-                            </div>
+                            </a>
                         </div>
 
                         <div class="grid__column-4">
-                            <div class="container-top-place">
+                            <a href="#" class="container-top-place">
                                 <img src="./assest/imgs/20e74de0-0eb8-4fca-afb8-b111875acdf5.webp" alt="" class="container-top-img">
                                 <div class="container-top__place-info">
                                     <span class="container-top__place-info-name">Thành phố Vinh</span>
                                     <span class="container-top__place-info-time">4 giờ lái xe</span>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="grid__column-4">
-                            <div class="container-top-place">
+                            <a href="#" class="container-top-place">
                                 <img src="./assest/imgs/7c309a70-bc93-4603-8d3b-9d4cd9bf75b2.webp" alt="" class="container-top-img">
                                 <div class="container-top__place-info">
                                     <span class="container-top__place-info-name">Thành Phố Thanh Hóa</span>
                                     <span class="container-top__place-info-time">2 giờ lái xe</span>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                             
 
@@ -216,33 +265,33 @@
                     <p class="container-heading">Ở bất cứ đâu</p>
                     <div class="grid__row">
                         <div class="grid__column-4">
-                            <div class="container-between-place">
+                            <a href="#" class="container-between-place">
                                 <img src="./assest/imgs/2f13349d-879d-43c6-83e3-8e5679291d53.webp" alt="" class="container-between-img">
                                 <span class="container-between__place-info-name"> Nơi nghỉ dưỡng ngoài trời</span>
                                
-                            </div>
+                            </a>
                         </div>
 
                         <div class="grid__column-4">
-                            <div class="container-between-place">
+                            <a href="#" class="container-between-place">
                                 <img src="./assest/imgs/36f53e61-db8d-403c-9122-5b761c0e4264.webp" alt="" class="container-between-img">
                                 <span class="container-between__place-info-name">chỗ ở độc đáo</span>
                                
-                            </div>
+                            </a>
                         </div>
                         <div class="grid__column-4">
-                            <div class="container-between-place">
+                            <a href="#" class="container-between-place">
                                 <img src="./assest/imgs/7d82ca14-56e5-4465-8218-dcfa7d69b6ac.webp" alt="" class="container-between-img">
                                 <span class="container-between__place-info-name">Toàn bộ nhà</span>
                                
-                            </div>
+                            </a>
                         </div>
                         <div class="grid__column-4">
-                            <div class="container-between-place">
+                            <a href="#" class="container-between-place">
                                 <img src="./assest/imgs/10a638e1-6aff-4313-8033-1275cec83987.webp" alt="" class="container-between-img">
                                 <span class="container-between__place-info-name">Cho phép mang thú cưng</span>
                                
-                            </div>
+                            </a>
                         </div>
 
                     </div>
@@ -260,28 +309,31 @@
                     <p class="container-heading">Khám phá những điều nên trải nghiệm</p>
                     <div class="grid__row">
                         <div class="grid__column-3">
-                            <div class="container-bottom-place">
+                            <a href="" class="container-bottom-place">
                                 <img src="./assest/imgs/ad109d56-2421-40cd-98e6-e114160dc85b.webp" alt="" class="container-bottom-img">
                                 <span class="container-bottom__place-info-name"> Trải nghiệm </span>
                                 <span class="container-bottom__place-info-time">Tìm các hoạt động khó quên gần bạn</span>
 
-                            </div>
+                            </a>
                         </div>
                         <div class="grid__column-3">
-                            <div class="container-bottom-place">
+                            <a href="" class="container-bottom-place">
                                 <img src="./assest/imgs/0ce799cb-7553-4369-be9e-d0011e0ef636.webp" alt="" class="container-bottom-img">
                                 <span class="container-bottom__place-info-name"> Trải nghiệm trực tuyến</span>
                                 <span class="container-bottom__place-info-time">Các hoạt động tương tác, truyền trực tiếp dưới sự dẫn dắt của người tổ chức</span>
                                 
-                            </div>
+                            </a>
                         </div>
                         <div class="grid__column-3">
-                            <div class="container-bottom-place">
+                            <a href="" class="container-bottom-place">
                                 <img src="./assest/imgs/f51f70fb-93b7-4974-86e8-1195b64f1353.webp" alt="" class="container-bottom-img">
                                 <span class="container-bottom__place-info-name"> Vận động viên Olympic và vận động viên Paralypic</span>
                                 <span class="container-bottom__place-info-time">Các hoạt động trực tuyến do vận động viên tổ chức</span>
 
-                            </div>
+                                <div class="container-bottom-place-special">
+                                    Nổi bật
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -447,12 +499,12 @@
     </div>
 
     <!-- modal -->
-    <!-- <div class="modal">
+    <div class="modal js-modal">
 
-        <div class="modal-container">
+        <div class="modal-container js-modal-container">
 
             <div class="modal-header">
-                <i class="modal-header-icon fas fa-times"></i>
+                <i class="modal-header-icon fas fa-times js-close "></i>
                 <p class="modal-header-text">
                     Đăng nhập hoặc đăng ký
                 </p>
@@ -511,10 +563,39 @@
                 </div>
                 <div class="footer-btn">
                     <i class="footer-btn-icon footer-btn-icon--gray far fa-envelope"></i>
-                    <span class="footer-btn-text">Tiếp tục với Gmail</span>
+                    <span class="footer-btn-text utn">Tiếp tục với Gmail</span>
                 </div>
             </div>
         </div>
-    </div> -->
+    </div> 
+
+    <script>
+        const loginsOpen = document.querySelectorAll('.js-login-modal')
+        const modal =document.querySelector('.js-modal')
+        const closeModal =document.querySelector('.js-close')
+
+        const modolContainer = document.querySelector('.js-modal-container')
+
+        function showModal (){
+            modal.classList.add('open')
+        }
+
+        function hideModal (){
+            modal.classList.remove('open')
+        }
+
+        for (const loginOpen of loginsOpen) {
+            loginOpen.addEventListener('click',showModal)
+        }
+
+         closeModal.addEventListener('click',hideModal)
+
+         modal.addEventListener('click', hideModal)
+
+        modolContainer.addEventListener('click',function (event){
+            event.stopPropagation()
+         })
+
+    </script>
 </body>
 </html>

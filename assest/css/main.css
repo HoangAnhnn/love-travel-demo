@@ -41,6 +41,7 @@
     min-width: 240px;
     border-radius: 16px;
     display:none;
+    z-index: 1;
 }
 
 .navbar-login-container::before{
@@ -210,6 +211,164 @@ i.navbar-item-icon{
     background-color: #fff;
     margin: 0 auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.address-list-has-child{
+    position: relative;
+}
+
+
+.address-list-has-child:hover .address-child{
+    display: block;
+}
+
+
+.address-child::before{
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 100%;
+    left: 0;
+    top: -20px;
+}
+
+.address-child{
+    position: absolute;
+    top: 120%;
+    left: 0;
+    border-radius: 30px;
+    background-color: var(--white-color);
+    padding: 32px 32px 32px 32px;
+    box-shadow: 0 6px 20px rgba(0,0,0, 0.3);
+    display: none;
+    z-index: 1;
+}
+
+.address-child-text{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #222;
+    margin: 0px 0 18px 0;
+}
+
+.address-child-link{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 430px;
+    padding: 18px 24px;
+    border: 1px solid #000;
+    border-radius: 5rem;
+    border-color: #ddd;
+    box-shadow: 0 0 12px rgba(0,0,0, 0.15);
+}
+
+.address-child-link:hover{
+    box-shadow: 0 0 20px rgba(0,0,0, 0.3);
+
+}
+
+.address-child-search{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #850195;
+    
+}
+
+.address-child-icon{
+    font-size: 2.4rem;
+    color: #850195;
+
+}
+
+
+
+.address-child-sub-search{
+    right: 0;
+    left: auto;
+    cursor: default;
+}
+
+.address-child-sub-search-quantity{
+    display: flex;
+    align-items: center;
+    width: 330px;
+}
+
+.address-child-quantity-left{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+}
+
+.address-child-quantity-left-top{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #222;
+    display: block;
+
+}
+
+.address-child-quantity-left-btm{
+    font-size: 1.4rem;
+    color: #717171;
+    line-height: 1.8rem;
+    display: block;
+    margin-top: 4px;
+}
+
+.address-child-quantity-right{
+    display: flex;
+    align-items: center;
+
+}
+
+.address-child-remove{
+    border-radius: 50%;
+    padding: 6px 7px;
+    border: 2px solid rgba(239,239,239,1);
+    background-color: #fff;
+    cursor: pointer;
+
+}
+
+.address-child-sub-search-icon{
+    font-size: 1.6rem;
+    
+}
+
+.address-child-remove .address-child-sub-search-icon{
+    color:rgba(220,220,220,1) ;
+}
+
+.address-child-right-quantity{
+    margin: 0 12px;
+    font-size: 1.6rem;
+}
+
+.address-child-add .address-child-sub-search-icon{
+    color: #585757;
+}
+
+.address-child-add{
+    border-radius: 50%;
+    padding: 6px 7px;
+    border: 2px solid rgba(117,117,117,0.8);
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+
+.address-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .address-list{
@@ -264,6 +423,7 @@ i.navbar-item-icon{
 
 .address-list:nth-child(1):active {
     background-color: #fff;
+    border-radius: 50px;
 }
 
 .address-list:nth-child(1){
@@ -328,11 +488,7 @@ i.navbar-item-icon{
     
 }
 
-.modal-container{
-    max-width: 570px;
-    background-color: #fff;
-    border-radius: 12px;
-}
+
 
 .modal-header{
     padding: 12px 24px;
@@ -350,9 +506,15 @@ i.navbar-item-icon{
 
 }
 
+.modal-header-icon:hover{
+    background-color: #dddd;
+    cursor: pointer;
+}
 
 .modal-header-icon{
     font-size: 1.6rem;
+    padding: 4px 6px;
+    border-radius: 50%;
 }
 
 .modal-content-heading{
@@ -500,6 +662,8 @@ i.navbar-item-icon{
     display: flex;
     align-items: center;
     margin-bottom: 18px;
+    text-decoration: none;
+    color: #222;
 }
 
 .container-top__place-info{
@@ -519,6 +683,9 @@ i.navbar-item-icon{
 
 .container-between-place{
     margin-bottom: 40px;
+    text-decoration: none;
+    color: #222;
+    display: block;
 }
 
 .container-between-img{
@@ -584,18 +751,37 @@ i.navbar-item-icon{
     font-weight: 600;
     border-radius: 8px;
     border: none;
+    cursor: pointer;
 
 }
 
 .container-bottom-place{
     display: flex;
     flex-direction: column;
+    text-decoration: none;
+    color: #222;
+    display: block;
+    position: relative;
+}
+
+.container-bottom-place-special{
+    position: absolute;
+    font-size: 1.1rem;
+    font-weight: 700;
+    top: 2%;
+    left: 2%;
+    color: #222;
+    z-index: 1;
+    background-color: var(--white-color);
+    padding: 0px 3px;
+    border-radius: 4px;
 }
 
 .container-bottom__place-info-name{
     font-size: 1.8rem;
     font-weight: 800px;
     line-height: 1.8rem;
+    display: block;
 }
 
 .container-bottom{
@@ -609,6 +795,7 @@ i.navbar-item-icon{
 
 .container-bottom-img{
     border-radius: 8px;
+    width: 100%;
 }
 
 .container-bottom__place-info-name{
